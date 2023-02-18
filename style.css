@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'gothic';
+    src: URL('gothic.ttf') format('truetype');
+  }
+
+*
+ {
+     margin: 0px;
+     font-family: 'gothic', sans-serif;
+     padding: 0px;
+
+box-sizing: border-box;
+ }
+body{
+    min-height: 100vh;
+
+    baaaahooo: linear-gradient(rgb(32, 26, 42), rgb(131, 89, 128));
+	background: -webkit-linear-gradient(#0c1461, #827026)
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .icon{
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 3em;
+text-transform: uppercase;
+letter-spacing: 0px;
+ 
+
+background: -webkit-linear-gradient(rgb(253, 207, 255), rgb(135, 8, 255));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.noshadow{
+ text-shadow: 3px 3px 0px rgba(0, 0, 0, 0);
+
+}
+.gtbutton {
+    all: unset;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    color: #fff;
+    box-shadow: 2px 2px #000;
+    font-size: 20px;
+    font-family: 'gothic', sans-serif;
+    padding: 7px 10px 10px;
+    text-shadow: 1.5px 1.5px rgb(0 0 0 / 70%);
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #89c3d6;
+}
+.gtbutton:active {
+    color: rgba(255, 255, 255, 0.741);
+}
+.centerized{
+    z-index: 9;
+    position: absolute;
+    font-size: 7.5vw;
+    display: inline-block;
+    padding: 8px 30px;
+    text-align: center;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+}
+header ul li a:hover{
+
+    background: #fff;
+}
+.mainlogo{
+	width: 50px;
+	height: 15px;
+}
+.bigbutton{
+    padding: 20px 60px;
+    font-size: 42px;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+height: 100%;
+object-fit:cover;
+-webkit-filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.377));
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.377));
+}
+
+
+.GTModal {
+
+ display: none;
+	position: fixed;
+	top: 3%;
+	left: 3%;
+	width: 94%;
+	height: auto;
+	max-height: 90%;
+	background-color: rgba(68, 129, 166, .85);
+
+	z-index: 99999;
+	padding: 10px 20px;
+	border: 5px SOLID #bee8f1;
+	border-radius: 7px;
+	box-shadow: #000 3px 3px, #000 3px 3px inset;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+}
+
+ b{
+color: rgb(146, 245, 146);
+text-transform: uppercase;
+ }
+
+.GTModal .header p {
+	position: relative;
+	top: -8px;
+	font-size: 20px;
+	font-weight: 700;
+	display: inline
+}
+
+.GTModal .colorable p {
+	color: #fff9ee;
+	border-bottom-color: #fce6ba;
+    text-shadow: 1.5px 1.5px rgb(0 0 0 / 50%);
+	font-family: 'gothic', sans-serif;
+	font-size: 22px
+}
+
+red{
+	color: red;
+}
+filepath{
+	color: rgb(255, 238, 183);
+}
+ keys{
+	color: rgb(173, 203, 231);
+ }
+ ipaddress{
+	color: rgb(255, 238, 183);
+ }
+.growButton {
+	background-color: #89c3d6
+}
+
+.growButton:disabled {
+	opacity: .7
+}
+
+.growCancelButton {
+	background-color: #ffcd00
+}
+
+.bigg{
+    font-size: 40px;
+    color: white;
+    text-shadow: 1.5px 1.5px rgb(0 0 0 / 70%);
+}
+.GTModal .GTText {
+	background: 0 0;
+	padding: 5px 10px;
+	border: none;
+	border-bottom: 3px SOLID #bee8f1;
+	box-shadow: #000 0 2px;
+}
+.gtbutton:active{
+
+		color: rgba(255, 255, 255, 0.741);
+
+}
+.GTModal .end p {
+	font-weight: 700
+}
+
+.container input {
+	opacity: 0;
+	cursor: pointer
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 32px;
+	width: 32px;
+	background: url(growstocks.xyz/main/assets/img/checkboxBefore.png)
+}
+
+.container input:checked~.checkmark {
+	background: url(growstocks.xyz/main/assets/img/checkboxAfter.png);
+	animation: bump .2s reverse
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+
+.container input:checked~.checkmark:after {
+	display: block
+}
+
+.container .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px
+}
+.tutorials{
+
+}
+@-webkit-keyframes bump {
+	from {
+		top: 0
+	}
+	to {
+		top: -5px
+	}
+}
+
+@keyframes bump {
+	from {
+		top: 0
+	}
+	to {
+		top: -5px
+	}
+}
